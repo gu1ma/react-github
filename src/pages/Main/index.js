@@ -36,6 +36,24 @@ export default class Main extends Component {
     });
   };
 
+  // Carregando os dados do localStorage
+  componentDidMount() {
+    const repositories = localStorage.getItem('repositories');
+
+    if (repositories) {
+      this.setState({ repositories: JSON.parse(repositories) });
+    }
+  }
+
+  // Salvando dados no localStorage
+  componentDidUpdate(_, prevState) {
+    const { repositories } = this.state;
+
+    if (prevState.repositories !== repositories) {
+      localStorage.setItem('repositories', JSON.stringify(repositories));
+    }
+  }
+
   render() {
     const { newRepo, repositories, loading } = this.state;
 
