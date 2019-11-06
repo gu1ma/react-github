@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { Container, Form, SubmitButton, List } from './styles';
+import Container from '../../components/Container';
+import { Form, SubmitButton, List } from './styles';
 
 // import api from '../../services/api';
 
