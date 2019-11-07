@@ -21,10 +21,7 @@ export const IssuesList = styled.ul`
     padding: 15px 10px;
     border: 1px solid #eee;
     border-radius: 4px;
-  }
-
-  & + li {
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   img {
@@ -48,6 +45,23 @@ export const IssuesList = styled.ul`
         &:hover {
           color: #7159c1;
         }
+      }
+
+      p {
+        margin-top: 5px;
+        font-size: 12px;
+        color: #999;
+      }
+
+      span {
+        background: #eee;
+        color: #333;
+        border-radius: 2px;
+        font-size: 12px;
+        font-weight: 600;
+        height: 20px;
+        padding: 3px 4px;
+        margin-left: 10px;
       }
     }
 
